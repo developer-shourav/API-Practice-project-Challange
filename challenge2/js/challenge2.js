@@ -34,4 +34,20 @@ const data = [
     },
   ];
 
-  
+  const itemsHoldingRow = document.getElementById("row");
+  data.slice(0,2).map( item => {
+    const col = document.createElement("div");
+    col.classList.add('col')
+    col.innerHTML = ` 
+        <div class="card h-100">
+        <img src=${item.imageURL} class="card-img-top" alt="...">
+        <div class="card-body">
+            <h4 class="card-title">Car Name: ${item.name} </h4>
+            <h6 class="card-text">Car Details: ${item.description}</h6>
+            <button class="btn btn-primary">Car Price: ${item.price}</button>
+        </div>
+        </div>
+    `;
+
+  itemsHoldingRow.appendChild(col)
+  })
