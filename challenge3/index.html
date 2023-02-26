@@ -9,7 +9,7 @@
 
 </head>
 <body>
-   <div class="container">
+   <header class="container">
     <nav class="navbar navbar-expand-lg bg-primary-subtle rounded mt-3 text-wite">
         <div class="container-fluid">
           <a class="navbar-brand fw-bold" href="#">All Countries</a>
@@ -23,8 +23,8 @@
                 Filter by language
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li onclick="loadAllCountry('lang/spa')"><a class="dropdown-item" href="#">Spnash</a></li>
+                  
                   
                   
                 </ul>
@@ -57,8 +57,18 @@
           </div>
         </div>
       </nav>
-   </div>
+   </header>
 
+
+  <main>
+    <!-- Main section -->
+    <section class="container mt-5">
+        <h2 class="text-center mb-5 ">Total Countries (<span class="text-primary-emphasis" id="country-count"></span>)</h2>
+        <div id="row" class="row row-cols-1 row-cols-md-3 g-3">
+              
+          </div>
+    </section>
+  </main>
 
 <script src="js/challenge3.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
