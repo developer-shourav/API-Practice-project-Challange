@@ -18,7 +18,7 @@ const displayAllCountry = (counties) => {
     const countryDataRow = document.getElementById("row");
     countryDataRow.innerHTML = "";
     counties.map( country => {
-        console.log(country);
+      /*   console.log(country); */
         const newItemDiv = document.createElement("div");
         newItemDiv.classList.add("col");
         newItemDiv.innerHTML = `
@@ -26,7 +26,7 @@ const displayAllCountry = (counties) => {
             <img  src="${country.flags.png}" class="card-img-top img-fluid h-50" alt="...">
             <div class="card-body">
             <h4 class="card-title">Name: ${country.name.common}</h4>
-            <h5 class="card-title">Capital: ${country.capital[0]? country.capital[0] : "No Capital"}</h5>
+            <h5 class="card-title">Capital: ${country.capital? country.capital : "No Capital"}</h5>
             <h6 class="card-title">Region: ${country.continents[0]}</h6>
             
             </div>
