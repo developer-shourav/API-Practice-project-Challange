@@ -33,7 +33,7 @@ const person = {
                   Using Map method 
   ======================================================*/
 
-  const loadPerson = () => {
+  /* const loadPerson = () => {
         const personCount = document.getElementById("person-count");
         personCount.innerText = `${person.result.length}`;
         person.result.map(person => {
@@ -56,9 +56,37 @@ const person = {
    
   }
 
-  loadPerson();
+  loadPerson(); */
 
-  
+
     /* ===============================================
                Using Simple distructing method 
   ======================================================*/
+
+  const personCount = document.getElementById("person-count");
+  personCount.innerText = `${person.result.length}`;
+  const personDataRow = document.getElementById("row");
+  personDataRow.innerHTML = ` 
+  
+    <div class ="col-sm-6">
+              <div class="card-body">
+                  <h6 class="card-title">Person Name: ${person.result[0].name.common}</h6>
+                  <hr>
+                  <p class="card-text">age:${person.result[0].age}</p>
+                  <p class="card-text">street:${person.result[0].address.street}</p>
+             </div>
+    </div>
+
+    <div class ="col-sm-6">
+    <div class="card-body">
+        <h6 class="card-title">Person Name: ${person.result[1].name.common}</h6>
+        <hr>
+        <p class="card-text">age:${person.result[1].age}</p>
+        <p class="card-text">street:${person.result[1].address.street}</p>
+   </div>
+</div>
+   
+  
+  `;
+
+  
