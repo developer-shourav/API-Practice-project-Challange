@@ -33,7 +33,7 @@ const person = {
                   Using Map method 
   ======================================================*/
 
-  /* const loadPerson = () => {
+  const loadPerson = () => {
         const personCount = document.getElementById("person-count");
         personCount.innerText = `${person.result.length}`;
         person.result.map(person => {
@@ -56,14 +56,14 @@ const person = {
    
   }
 
-  loadPerson(); */
+  loadPerson();
 
 
     /* ===============================================
                Using Simple distructing method 
   ======================================================*/
 
-  const personCount = document.getElementById("person-count");
+  /* const personCount = document.getElementById("person-count");
   personCount.innerText = `${person.result.length}`;
   const personDataRow = document.getElementById("row");
   personDataRow.innerHTML = ` 
@@ -88,5 +88,4 @@ const person = {
    
   
   `;
-
-  
+ */
